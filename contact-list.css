@@ -1,0 +1,79 @@
+html, body{
+    height: 100%;
+}
+
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-title{
+    color: #385555;
+    text-align: center;
+}
+
+.list-wrapper{
+    background-color: whitesmoke;
+    width: 90%;
+    max-width: 500px;
+    max-height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, .5);
+    overflow-y: auto;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item{
+    display: flex;
+    border-bottom: 2px solid #eee;
+    padding: 16px;
+}
+
+.list-item-image img{
+    width: 80px;
+    border-radius: 40px;
+}
+
+.list-item-data{
+    padding: 0 20px;
+    flex-grow: 1;
+    /* background-color: yellow*/
+    /* cor de fundo para analisar o flex-grow */
+}
+
+.item-name{
+    font-size: 20px;
+    color: #385555;
+    margin: 0;
+}
+
+.item-email{
+    margin-top: 5px;
+    color: #aaa;
+}
+
+.list-item:hover{
+    background-color: #d9d7d7;
+}
+
+.list-actions{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    opacity: 0;
+}
+
+.list-item:hover .list-actions{
+    opacity: .3
+}
