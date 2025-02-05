@@ -1,0 +1,114 @@
+body{
+    margin: 0;
+    background-color: #cfcece;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+/* formatando o cabeçalho */
+
+.imagem_cabeçalho{
+    background-image: url(ProjetoCSS-inicio/imagens/bg-3.jpg);
+    background-position: right center;
+    background-size: cover;
+    height: 800px;
+}
+
+.menu{
+    text-align: right; 
+    text-transform: uppercase;
+    margin-right: 20px;  
+}
+
+li{
+    display: inline-block;
+    padding: 0;  
+    margin-top: 30px; 
+}
+
+li a{
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    background-color: rgba(0, 0, 0, .3);
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    margin-left: 20px;
+    font-size: 12px;    
+}
+
+li a:hover{
+    background-color: #424141;
+}
+
+.titulos_cabeçalho{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.h1_imagem{
+    text-shadow: 2px 2px 2px black ;
+    text-transform: uppercase;
+    font-size: 75px;
+    color: aliceblue;  
+}
+
+.h2_imagem{
+    display: inline-block;
+    color: aliceblue;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, .3);
+    border-bottom: 2px solid;   
+}
+
+/* formatando o conteúdo */
+
+article{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    padding: 16px;
+    background-color: whitesmoke;
+    min-width: 800px;
+    max-width: 1000px;   
+} 
+
+article h2{
+    background-color: #aeadad;
+    padding: 20px;
+    border-bottom: 3px solid;
+    margin-top: 0;
+}
+
+p{
+    padding: 10px;
+}
+
+.saiba_mais{
+    display: block; /*alterou para display: block porque width só funciona com esse tipo de elemento */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    text-decoration: none;
+    color: #130b00;
+    width: fit-content;
+    margin-left: auto; /*adiciona o espaço restante na margem à esquerda e empura o botão para direita */
+}
+
+.saiba_mais:hover{
+    background-color: #424141;
+    color: whitesmoke;
+}
+.rodape{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: whitesmoke;
+    background-color: #737171;
+    font-weight: bolder;
+    text-shadow: 2px 2px 2px black;
+    padding: 15px;
+}
